@@ -112,7 +112,7 @@ nav ul li a{
   font-style: normal;
   font-weight: 700;
   color: rgb(4, 68, 18);
-  margin-bottom: 1.5rem;
+
   text-transform: uppercase;
   font-size: 1.6rem;
 }
@@ -139,7 +139,7 @@ nav ul li a{
   font-family: 'Work Sans', sans-serif;
   display:flex;
   height: 4.8rem;
-  
+  animation-name: hirebig; 
 }
 
 .content h1,.container h1{font-size: var(--big-h1-font-size);}
@@ -186,13 +186,14 @@ nav ul li a{
     grid-row: 1.2em;
     justify-content: start;
     align-items: center;
-    margin-left: 29px;
+    margin-left: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     color: rgb(39, 37, 37);
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.2rem;
     margin-top:0.8 rem;
+    
   }
 .header h1{ 
   grid-column: 1;
@@ -205,7 +206,8 @@ nav ul li a{
   color: rgb(26, 25, 25);
   margin-top: 1.6rem;
   width:auto;
-  font-size: 1.8rem;
+  font-size: var(--mid-h1-font-size);
+}  
 }
 .intro .h3 {
   font-family:'Rowdies', cursive;
@@ -218,12 +220,13 @@ nav ul li a{
 }
 .p{ grid-column: 1;
   grid-row: 2;
-  line-height: 1em;
+  line-height:1 em;
   align-self: start;
   font-size: var(--mid-p-font-size);
 }
 .img{ grid-column: 2;
   grid-row: 2/4;
+  margin-right: auto;
 }
 
 .intro a {
@@ -237,16 +240,17 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     color: #303030;
-    height: 4.8rem;
+    height: 3.8rem;
+    animation-name: hirebig; 
 }
 
 .content h1,.container h1{font-size: var(--mid-h1-font-size);}
 
-.content p,.ul,.link {font-size:var(--mid-p-font-size);}
+.content p,.ul,.link {font-size:var(--mid-p-font-size);
 }
 
 
-@media (max-width: 740px){
+@media (max-width: 780px){
   nav ul li a{
     font-size: 24px;
   }
@@ -255,7 +259,8 @@ nav ul li a{
     grid-template-columns: 1fr;
     grid-template-rows: minmax(20px auto);
     justify-content: space-aroundcenter;
-    margin-left: 29px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -282,15 +287,18 @@ nav ul li a{
   line-height: 2.1rem;
   color: rgb(4, 68, 18);
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 .p{ grid-column: 1;
   grid-row: 2;
   line-height: 1em;
   font-size:var(--sml-p-font-size);
+  margin:auto;
 }
 .img{ grid-column: 1;
   grid-row: 3;
+  margin:auto;
+ 
 }
 #footer{
   grid-column: 1;
@@ -309,7 +317,8 @@ nav ul li a{
     align-items: center;
     color: #303030;
     display:flex;
-    
+    animation-name: hiresml; 
+    height:2rem;
 }
 
 
@@ -367,6 +376,7 @@ body {
   max-width:800px;
   width:100%;
   margin:0 auto;
+  font-family: var(--h1-font-family);
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
@@ -466,22 +476,33 @@ fieldset {
    display: inline-block;
    vertical-align: middle;
  }
- @keyframes hire { 
+ @keyframes hirebig { 
   0% {background-color: rgb(64, 127, 138);width:10rem; font-size: 1.6rem;} 
   100% {background-color: #477faa;width:14rem;font-size: 2.6rem;} 
   } 
+  
+  @keyframes hiremid{ 
+    0% {background-color: rgb(64, 127, 138);width:8rem; font-size: 1.2rem;} 
+    100% {background-color: #477faa;width:10rem;font-size: 2rem;} 
+    } 
+
+  @keyframes hiresml{ 
+      0% {background-color: rgb(64, 127, 138);width:6rem; font-size: 1 rem;} 
+      100% {background-color: #477faa;width:8rem;font-size: 1.4rem;} 
+      } 
   .intro a { 
   background: #477faa;
-  animation-name: hire; 
   animation-duration: 2s; 
   animation-iteration-count: infinite; 
   animation-direction: alternate;
-  height: 4.8rem;
   font-weight: 700;
   letter-spacing: 0;
   box-shadow: none;
   text-transform: uppercase;
   }
+
+
+
 
 
   body nav a span{
