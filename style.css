@@ -517,7 +517,7 @@ fieldset {
     margin-bottom: 1.6rem;
     margin-top: 1.6rem;
     color:#FFF;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--p-font-family);
     
   }
 
@@ -528,10 +528,11 @@ fieldset {
   margin-top: 60px;
   background: #477faa;
   color: #e5e7e9;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
-  padding: 10px 0;
-  height: 80px;
+  padding: 20px 0;
+  height: 100px;
+  font-family: var(--p-font-family);
 }
 
 #footer p {
