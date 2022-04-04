@@ -259,13 +259,14 @@ nav ul li a{
     grid-template-columns: 1fr;
     grid-template-rows: minmax(20px auto);
     justify-content: space-aroundcenter;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin:auto;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     color: rgb(39, 37, 37);
     row-gap: 0.8rem;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .header h1{
@@ -293,11 +294,13 @@ nav ul li a{
   grid-row: 2;
   line-height: 1em;
   font-size:var(--sml-p-font-size);
-  margin:auto;
+
 }
 .img{ grid-column: 1;
   grid-row: 3;
+  width:auto;
   margin:auto;
+ 
  
 }
 #footer{
